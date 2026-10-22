@@ -155,12 +155,6 @@ blocks of `logs/main_study.txt` unless stated; all of them can be recomputed fro
 Quantities derived by hand (marked above) are simple arithmetic on printed ratios; this repository does not
 contain a script that produces them.
 
-## Files not regenerated in this archive
-
-`results/*.csv`, `audits/*.json` and `logs/*.txt` are outputs of the runs. They are listed in the layout but were
-not recreated when this archive was assembled; copy them from the archived Kaggle run, or regenerate them as above,
-before publishing.
-
 ## Citation
 
 See `CITATION.cff` (repository URL / DOI still to be added). License: MIT for the code (`LICENSE`); datasets are

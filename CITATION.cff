@@ -19,4 +19,4 @@ abstract: >-
   Simulation code, run logs and audit records for an overhead-aware study of
   inference-time shot allocation in quantum fidelity-kernel SVMs
   (exact 4-qubit kernels, binomial shot noise; no quantum hardware).
-# TODO before release: add repository-code, doi (e.g. Zenodo) and date-released.
+DOI: 10.5281/zenodo.23559044

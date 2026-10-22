@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it using the metadata below."
+title: "Code for: When Does Adaptive Inference Measurement Allocation Pay Off in Quantum Kernel Classification? An Overhead-Aware Performance Study"
+type: software
+version: "6.1"
+license: MIT
+authors:
+  - family-names: "Vincent"
+    given-names: "Patrick"
+    email: "zda24m007@iitmz.ac.in"
+    affiliation: "Indian Institute of Technology Madras, Zanzibar Campus"
+keywords:
+  - quantum kernel methods
+  - support vector machines
+  - shot allocation
+  - measurement budget
+  - performance evaluation
+abstract: >-
+  Simulation code, run logs and audit records for an overhead-aware study of
+  inference-time shot allocation in quantum fidelity-kernel SVMs
+  (exact 4-qubit kernels, binomial shot noise; no quantum hardware).
+# TODO before release: add repository-code, doi (e.g. Zenodo) and date-released.

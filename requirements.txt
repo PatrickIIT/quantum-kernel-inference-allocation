@@ -1,0 +1,6 @@
+# Versions used for the reported runs (Python 3.13.15, Linux x86_64).
+numpy==2.1.3
+pandas==2.3.3
+scikit-learn==1.6.1
+# Only needed by scripts/make_figures.py (version of the original figures not recorded):
+matplotlib>=3.8

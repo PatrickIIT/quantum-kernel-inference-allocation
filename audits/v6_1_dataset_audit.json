@@ -1,0 +1,161 @@
+{
+  "env": {
+    "python": "3.13.15",
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.6.1"
+  },
+  "config": {
+    "N_QUBITS": 4,
+    "FM_REPS": 1,
+    "BW": 0.5,
+    "N_TRAIN": 96,
+    "N_TEST_BY": {
+      "ai4i": 2000,
+      "breast": 400,
+      "pima": 300
+    },
+    "BUDGETS": [
+      640,
+      1280,
+      2560
+    ],
+    "PILOT_SP": [
+      1,
+      2,
+      4
+    ],
+    "NSPLITS": 30,
+    "NREPS": 3,
+    "NREPS_IND": 4,
+    "TRAIN_DRAWS": 2,
+    "TRAIN_SHOTS_PER_PAIR": 128,
+    "PRIMARY": {
+      "metric": "average_precision",
+      "policy": "coef",
+      "budget": 1280
+    }
+  },
+  "ai4i": {
+    "source": "/kaggle/input/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020/ai4i2020.csv",
+    "sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+    "rows": 10000,
+    "columns": [
+      "UDI",
+      "Product ID",
+      "Type",
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]",
+      "Machine failure",
+      "TWF",
+      "HDF",
+      "PWF",
+      "OSF",
+      "RNF"
+    ],
+    "dropped_columns": [
+      "UDI",
+      "Product ID",
+      "TWF",
+      "HDF",
+      "PWF",
+      "OSF",
+      "RNF"
+    ],
+    "features_used": [
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]",
+      "Type_H",
+      "Type_L",
+      "Type_M"
+    ],
+    "positives": 339,
+    "negatives": 9661,
+    "nan_cells": 0,
+    "matches_documented": true,
+    "warnings": []
+  },
+  "breast": {
+    "source": "/kaggle/input/datasets/uciml/breast-cancer-wisconsin-data/data.csv",
+    "sha256": "1425d9affa78ba8e53afc81d0ef8a19069ee10c4b21fe89b3cf514071b12ee33",
+    "rows": 569,
+    "features_used": [
+      "radius_mean",
+      "texture_mean",
+      "perimeter_mean",
+      "area_mean",
+      "smoothness_mean",
+      "compactness_mean",
+      "concavity_mean",
+      "concave points_mean",
+      "symmetry_mean",
+      "fractal_dimension_mean",
+      "radius_se",
+      "texture_se",
+      "perimeter_se",
+      "area_se",
+      "smoothness_se",
+      "compactness_se",
+      "concavity_se",
+      "concave points_se",
+      "symmetry_se",
+      "fractal_dimension_se",
+      "radius_worst",
+      "texture_worst",
+      "perimeter_worst",
+      "area_worst",
+      "smoothness_worst",
+      "compactness_worst",
+      "concavity_worst",
+      "concave points_worst",
+      "symmetry_worst",
+      "fractal_dimension_worst"
+    ],
+    "n_features": 30,
+    "positives": 212,
+    "negatives": 357,
+    "nan_cells": 0,
+    "matches_documented": true,
+    "warnings": []
+  },
+  "pima": {
+    "source": "/kaggle/input/datasets/kumargh/pimaindiansdiabetescsv/pima-indians-diabetes.csv",
+    "sha256": "c1e0f7d59d2e366cff1ab9fee1796e1e381ea5da64c6d96ef4baabf1eda5f238",
+    "layout": "no header; classic UCI column order ASSUMED",
+    "raw_rows": 768,
+    "rows": 768,
+    "dropped_rows": 0,
+    "columns_declared_or_assumed": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ],
+    "positives": 268,
+    "negatives": 500,
+    "zero_counts_per_feature": {
+      "Pregnancies": 111,
+      "Glucose": 5,
+      "BloodPressure": 35,
+      "SkinThickness": 227,
+      "Insulin": 374,
+      "BMI": 11,
+      "DiabetesPedigreeFunction": 0,
+      "Age": 0
+    },
+    "zero_treatment": "NONE: zeros kept exactly as recorded (no imputation, no row removal); in this dataset zeros in Glucose/BloodPressure/SkinThickness/Insulin/BMI commonly encode missing measurements",
+    "matches_documented": true,
+    "warnings": []
+  }
+}
